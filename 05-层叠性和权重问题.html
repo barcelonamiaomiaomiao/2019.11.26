@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box1{color: red;}
+        .box1{color: blue;}
+        .box2 .p1{color:green}
+        .p2{color: orange;}
+    </style>
+</head>
+<body>
+    <!--样式冲突看权重,权重大的生效-->
+    <div class="box1" id="box1">
+        <p>阿瓦达</p>
+    </div>
+    <!--id(100)>class(10)>标签(1)>*(0)-->
+    <!--复杂选择器的权重看叠加-->
+    <!--权重相同时后边的覆盖前边的-->
+    <div class="box2">
+        <p class="p1 p2">阿达瓦大无</p>
+    </div>
+</body>
+</html>

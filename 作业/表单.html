@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sub{width:300px;height:40px;background:red;color: white;font-size:16px;outline: none;border: none;}
+    </style>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>账户信息</legend>
+                <p>
+                    <span>用户名:</span>
+                    <span class="second"><input type="text"></span>
+                </p>              
+                <p>
+                    <span>密&nbsp;&nbsp;&nbsp;码:</span>
+                    <span><input type="password"></span>
+                </p>
+                <p>性别:<label for="t1">男</labal><input type="radio" name="sex" id="t1" value="0"><label for="t2">女</label><input type="radio" name="sex" id="t2" value="1"></p>           
+        </fieldset>
+        <fieldset>
+            <legend>公司信息</legend>
+            <p>
+                <span>公司名称:</span>
+                <span><input type="text" name="" id=""></span>
+            </p>
+            <p>
+                <span>公司所在地址:</span>
+                <span>
+                    <select name="s1" id="">
+                        <option value="0">--请选择--</option>
+                        <option value="1">山东</option>
+                        <option value="2">山西</option>
+                    </select>
+                    <select name="s2" id="">
+                        <option value="0">--请选择--</option>
+                        <option value="1">安阳</option>
+                        <option value="2">开封</option>
+                    </select>
+                    <select name="s3" id="">
+                        <option value="0">--请选择--</option>
+                        <option value="1">二七</option>
+                        <option value="2">郑东</option>
+                    </select>
+                </span>
+            </p>
+            <p>
+                <span>购买用途:</span>
+                <span>
+                    IT<input type="checkbox" name="a" value="a1">
+                    通讯设备<input type="checkbox" name="b" value="b1">
+                    大家电<input type="checkbox" name="c" value="c1">
+                    办公耗材<input type="checkbox" name="d" value="d1">
+                </span>
+            </p>
+            <p>
+                <span>公司行业:</span>
+                <span>
+                    <select name="s5" id="">
+                        <option value="0">IT行业</option>
+                        <option value="1">计算机软件</option>
+                        <option value="2">市场推广</option>
+                        <option value="3">广告</option>
+                    </select>
+                </span>
+            </p>
+            <p>
+                <span>公司介绍:</span>
+                <span><textarea name="" id="" cols="30" rows="10"></textarea></span>
+            </p>
+            <p>
+                <span>营业执照上传:</span>
+                <span><input type="file"></span>
+            </p>
+            <p>
+                <span><input type="submit" name="" id="" value="立即注册" class="sub"></span>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

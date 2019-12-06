@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"><!--外部引入css,可以复用-->
+        <!--内部样式,结构与样式分离,不可复用-->
+    <style>
+        a{display: block;width:100px;height:100px;color: blue;background:orange;}
+        p{color: orchid;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p style="color: white;">爱的味道哇</p><!--行内样式,权重最高1000,准确,结构和样式严重耦合-->
+        <a href="">达瓦阿瓦达</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--action用于表单提交的地址,method用于表单的提交方式GET/POST-->
+    <!--GET 1.信息显示在地址栏中不安全 2.大小有限制,<4K 3.一般用于获取数据-->
+    <!--POST 1.信息不会显示在地址栏,携带在请求体中 2.大小没有限制 3.用于提交数据-->
+    <form action="" method="GET">
+        <fieldset>
+            <legend>基本信息</legend>
+            姓名:<input type="text" name="zh" readonly><br>
+            密码:<input type="password" name="mm" disabled><br>
+            性别:男<input type="radio" name="sex" value="0">女<input type="radio" name="sex" value="1"><br>
+            爱好:唱<input type="checkbox" name="like" value="l1">跳<input type="checkbox" name="like" value="l2">rap<input type="checkbox" name="like" value="l3">篮球<input type="checkbox" name="like" value="l4"><br>
+            工作经验:<select name="s1">
+                        <option value="0">无经验</option>
+                        <option value="1">0-1</option>
+                        <option value="2">2-3</option>
+                    </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>补充信息</legend>
+            头像:<input type="file"><br>
+            备注:<textarea autofocus placeholder="请输入相关信息"></textarea><br>
+        </fieldset>
+        
+        <input type="submit" value="提交">
+    </form>
+    
+</body>
+</html>
